@@ -9,9 +9,10 @@ try{
 			$db_password = env('db_password');
 			$db_collection =  env('db_collection');
 
-			$connection = new MongoClient("mongodb://".$db_username:$db_password.
-				"@localhost:27017");
+			$connect = "mongodb://".$db_username.":".$db_password."@ds149567.mlab.com:49567/$db_name";
 
+
+			$connection = new MongoClient($connect);
 			$db= $connection->selectDB($db_name);
 			$collection = $db->selectCollection($db_collection);
 			$collection_count = $collection->count();

@@ -15,8 +15,8 @@ if(!empty($_POST)){
 			$db_collection =  env('db_collection');
 
 
-			$connect = "mongodb://".$db_username.":".$db_password.
-				"@localhost:27017";
+			$connect = "mongodb://".$db_username.":".$db_password."@ds149567.mlab.com:49567/$db_name";
+
 			
 			$connection = new MongoClient($connect);
 			
