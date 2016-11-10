@@ -14,8 +14,8 @@ if(!empty($_POST)){
 			$db_password = env('db_password');
 			$db_collection =  env('db_collection');
 			
-			$connection = new MongoClient("mongodb://".$db_username:$db_password.
-				"@localhost:27017");
+			$connection = new MongoClient("mongodb://$db_username:$db_password
+				@localhost:27017");
 			
 			$db= $connection->selectDB($db_name);
 			$collection = $db->selectCollection($db_collection);
