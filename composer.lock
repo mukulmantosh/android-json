@@ -4,10 +4,55 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4b6d1f852ac1e654d499e7df1dbfaa8e",
-    "content-hash": "be2e4b91a798b26754bace91c48131cb",
+    "hash": "41f7c91f19b4a1e1541b79b4f1ef5ec0",
+    "content-hash": "dc6d2f9952053572936de18cbfcd596d",
     "packages": [],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v113",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "af7089595b889690df2594044c8626068178f739"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/af7089595b889690df2594044c8626068178f739",
+                "reference": "af7089595b889690df2594044c8626068178f739",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/heroku-hhvm-apache2",
+                "bin/heroku-hhvm-nginx",
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+            "homepage": "https://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "hhvm",
+                "nginx",
+                "php"
+            ],
+            "time": "2016-10-19 23:42:40"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
