@@ -9,10 +9,10 @@ if(!empty($_POST)){
 
 	try{
 
-			$db_name = env('db_name');
-			$db_username = env('db_username');
-			$db_password = env('db_password');
-			$db_collection =  env('db_collection');
+			$db_name = getenv('db_name');
+			$db_username = getenv('db_username');
+			$db_password = getenv('db_password');
+			$db_collection =  getenv('db_collection');
 
 
 			$connect = "mongodb://".$db_username.":".$db_password."@ds149567.mlab.com:49567/$db_name";
